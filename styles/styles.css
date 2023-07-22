@@ -1,3 +1,13 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: "Rubik", "Arial", sans-serif;
     max-width: 1440px;
@@ -10,9 +20,10 @@ body {
 ul {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
     margin: 0;
 }
 
@@ -20,9 +31,242 @@ img {
     margin: 0;
 }
 
+button {
+    padding: 0;
+    color: white;
+}
+
 a {
     display: block;
     text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.header,.promo, .reviews, .footer {
+    background: #12141D;
+}
+
+.header {
+    color: white;
+}
+
+.navigation {
+    color: inherit;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.main-heading {
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: 600;
+    letter-spacing: -1.6px;
+    color: white;
+}
+
+.promo-text {
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.job-search {
+    font-size: 18px;
+    color: #444D56;
+    line-height: 120%;
+}
+
+.total-jobs {
+    font-size: 16px;
+    line-height: 30px;
+    color: white;
+}
+
+.total-jobs-count {
+    font-size: 20px;
+    color: #39C587;
+    line-height: 30px;
+}
+
+.holder-heading {
+    font-size: 20px;
+    line-height: 24px;
+    color: #12141D;
+    font-weight: 400;
+}
+
+.featured-jobs {
+    background-color: #F7F8F8;
+}
+
+.jobs-filter-heading, .featured-companies-heading, .managing-heading, .boosting-heading {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px; /* 122.222% */
+    letter-spacing: -0.36px;
+    color: #12141D;
+
+}
+
+
+.jobs-text {
+    color: #12141D;
+    font-size: 16px;
+    line-height: 20px; /* 125% */
+    opacity: 0.6000000238418579;
+}
+
+
+.filter-button {
+    color: #12141D;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+    background-color: rgba(18, 20, 29, 0.05);
+}
+
+.jobs-item {
+    border: 1px solid rgba(18, 20, 29, 0.24);
+}
+
+.jobs-heading {
+    color: #12141D;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px; /* 116.667% */
+}
+
+.tags-list {
+    color: #12141D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.filter-tag {
+    background: rgba(255, 102, 68, 0.10);
+    color: #FD4C5C;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px; /* 100% */
+}
+
+.button-primary {
+    background: rgba(34, 107, 249, 0.10);
+    color: #226BF9;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+}
+
+.button-more {
+    display: inline-block;
+    background: #F64;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+}
+
+.company-description {
+    color: #12141D;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+}
+
+.stars, .companys-reviews {
+    color: rgba(18, 20, 29, 0.80);
+    text-align: center;
+    font-family: DM Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+}
+
+.review-content {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px; /* 125% */
+    letter-spacing: -0.64px;
+}
+
+.review-author {
+    color: #FFF;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+}
+
+.authors-job {
+    display: block;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+}
+
+.managing-item-heading {
+    color: #1B1F23;
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px; /* 116.667% */
+}
+
+.managing-text {
+    color: #444D56;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.managing-button {
+    display: inline-block;
+    background: none;
+    color: #444D56;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+}
+
+.boosting-heading {
+    color: white;
+}
+
+.links-heading {
+    color: white;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.other-links > .links-item .footer-link {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
 }
 
 .footer {
