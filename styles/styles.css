@@ -492,8 +492,36 @@ a {
     color: white;
 }
 
+.links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+
 .links-heading {
     color: white;
+}
+
+.boosting {
+    display: flex;
+    align-items: baseline;
+    padding-top: 100px;
+    padding-bottom: 52px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.boosting > .button-more {
+    margin-top: 0;
+}
+
+.boosting-heading {
+    margin-right: auto;
+    width: 552px;
+}
+
+.links-item {
+    margin-bottom: 24px;
 }
 
 .footer-link {
@@ -504,6 +532,14 @@ a {
     line-height: 20px; /* 125% */
 }
 
+.links-heading {
+    margin-bottom: 40px;
+}
+
+.social {
+    margin-bottom: 20px;
+}
+
 .other-links > .links-item .footer-link {
     color: rgba(255, 255, 255, 0.60);
     font-size: 12px;
@@ -512,6 +548,24 @@ a {
     line-height: 16px; /* 133.333% */
 }
 
+.geo-info, .other-links, .other-links-list {
+    display: flex;
+}
+
+
+
+.other-links-list {
+    margin-right: auto;
+}
+
+.other-links-list > .links-item, .geo-info > .links-item:not(:last-child) {
+    margin-right: 24px;
+}
+
 .footer {
     flex-grow: 1;
+}
+
+.logo {
+    color: white;
 }
