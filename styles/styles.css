@@ -61,9 +61,47 @@ a {
 }
 
 .navigation {
+    display: flex;
+    padding: 24px 150px;
+    justify-content: space-between;
+    align-items: center;
     color: inherit;
     font-size: 16px;
     line-height: 16px;
+    margin-bottom: 153px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.navigation-list {
+    display: flex;
+    color: white;
+}
+
+.navigation-link {
+    color: inherit;
+    margin-right: 36px;
+}
+
+.user-actions-item {
+    display: inline-block;
+}
+
+.button {
+    font-family: Rubik, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+    padding: 14px 24px;
+}
+
+.sign-up-button {
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sign-in-button {
+    background: rgba(255, 255, 255, 0.10);
 }
 
 .main-heading {
@@ -72,24 +110,39 @@ a {
     font-weight: 600;
     letter-spacing: -1.6px;
     color: white;
+    text-align: center;
+    width: 740px;
+    margin: 0 auto 24px;
+}
+
+.promo {
+    margin-bottom: 100px;
 }
 
 .promo-text {
     font-size: 20px;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    margin: 0 auto 52px;
+    width: 600px;
 }
 
 .job-search {
     font-size: 18px;
     color: #444D56;
     line-height: 120%;
+    width: 604px;
+    display: block;
+    margin: 0 auto 32px;
 }
 
 .total-jobs {
     font-size: 16px;
     line-height: 30px;
     color: white;
+    text-align: center;
+    padding-bottom: 137px;
 }
 
 .total-jobs-count {
@@ -103,10 +156,28 @@ a {
     line-height: 24px;
     color: #12141D;
     font-weight: 400;
+    text-align: center;
+}
+
+.trusted-holders, .container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.trusted-list {
+    margin-bottom: 100px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-bottom: 1px solid rgba(18, 20, 29, 0.20);;
 }
 
 .featured-jobs {
     background-color: #F7F8F8;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 120px;
 }
 
 .jobs-filter-heading, .featured-companies-heading, .managing-heading, .boosting-heading {
@@ -117,7 +188,6 @@ a {
     line-height: 44px; /* 122.222% */
     letter-spacing: -0.36px;
     color: #12141D;
-
 }
 
 
@@ -128,6 +198,23 @@ a {
     opacity: 0.6000000238418579;
 }
 
+.filters {
+    display: flex;
+    margin-bottom: 52px;
+}
+
+.filters-description {
+    margin-right: auto;
+}
+
+.filters-list {
+    display: flex;
+    align-items: flex-end;
+}
+
+.jobs-filter-heading {
+    margin-bottom: 12px;
+}
 
 .filter-button {
     color: #12141D;
@@ -135,20 +222,54 @@ a {
     font-weight: 400;
     line-height: 16px; /* 114.286% */
     background-color: rgba(18, 20, 29, 0.05);
+    padding: 8px 13px;
+}
+
+.filter:not(:last-child) {
+    margin-right: 12px;
 }
 
 .jobs-item {
+    display: flex;
+    align-items: center;
     border: 1px solid rgba(18, 20, 29, 0.24);
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.jobs-info {
+    margin-right: auto;
+}
+
+.job-image {
+    margin-right: 20px;
 }
 
 .jobs-heading {
     color: #12141D;
+    font-family: Poppins, Arial, sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 28px; /* 116.667% */
+    margin-bottom: 16px;
+}
+
+.tags-container {
+    display: flex;
+    align-items: center;
+}
+
+.tag {
+    margin-right: 20px;
+}
+
+.tag:last-child {
+    margin-right: 40px;
 }
 
 .tags-list {
+    display: flex;
     color: #12141D;
     font-size: 16px;
     font-weight: 400;
@@ -156,11 +277,18 @@ a {
 }
 
 .filter-tag {
+    display: inline-block;
     background: rgba(255, 102, 68, 0.10);
     color: #FD4C5C;
     font-size: 14px;
     font-weight: 400;
     line-height: 14px; /* 100% */
+    padding: 6px 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
 }
 
 .button-primary {
@@ -169,6 +297,18 @@ a {
     font-size: 14px;
     font-weight: 500;
     line-height: 16px; /* 114.286% */
+    padding: 10px 16px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.companies-list .button-primary {
+    color: #226BF9;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%; /* 18.4px */
 }
 
 .button-more {
@@ -178,6 +318,48 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 16px; /* 100% */
+    margin-top: 36px;
+    padding: 16px 24px;
+    border-radius: 4px;
+}
+
+.featured-companies {
+    padding-bottom: 120px;
+}
+
+.featured-companies-heading {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 52px;
+}
+
+.companies-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.companies-item {
+    padding: 32px 20px 26px 20px;
+    border-radius: 8px;
+    border: 1px solid #E1E4E8;
+}
+
+.company-heading {
+    font-family: Outfit, Rubik, Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 100% */
+    padding-bottom: 12px;
+}
+
+.company-rating {
+    margin-bottom: 16px;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #F8F8F8;
 }
 
 .company-description {
@@ -185,6 +367,7 @@ a {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px; /* 157.143% */
+    margin-bottom: 30px;
 }
 
 .stars, .companys-reviews {
@@ -196,12 +379,30 @@ a {
     line-height: 16px; /* 114.286% */
 }
 
+.reviews {
+    margin-bottom: 120px;
+}
+
+.review-container {
+    width: 1134px;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .review-content {
     color: #FFF;
     font-size: 32px;
     font-weight: 400;
     line-height: 40px; /* 125% */
     letter-spacing: -0.64px;
+    padding-right: 95px;
+    padding-left: 60px;
+}
+
+.review-text {
+    padding-bottom: 36px;
 }
 
 .review-author {
@@ -210,6 +411,7 @@ a {
     font-size: 20px;
     font-weight: 600;
     line-height: 24px; /* 120% */
+    padding-bottom: 8px;
 }
 
 .authors-job {
@@ -220,12 +422,52 @@ a {
     line-height: 16px; /* 114.286% */
 }
 
+.slider-actions {
+    align-self: flex-end;
+}
+
+.managing {
+    margin-bottom: 120px;
+}
+
+.managing-heading {
+    text-align: center;
+    margin: 0 auto 52px;
+}
+
+.managing-list {
+    /*display: grid;*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    display: flex;
+    gap: 24px;
+}
+
+.managing-button {
+    padding-left: 0;
+    margin-top: auto;
+}
+
+.managing-icon {
+    margin-bottom: 26px;
+}
+
+.managing-item {
+    border-radius: 8px;
+    border: 1px solid #E1E4E8;
+    padding: 42px 62px 42px 32px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .managing-item-heading {
     color: #1B1F23;
     font-family: Poppins, sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 28px; /* 116.667% */
+    padding-bottom: 12px;
 }
 
 .managing-text {
@@ -234,6 +476,7 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
+    padding-bottom: 24px;
 }
 
 .managing-button {
