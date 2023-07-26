@@ -233,12 +233,28 @@ a {
 }
 
 .filter-button {
+    border-radius: 4px;
     color: #12141D;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px; /* 114.286% */
     background-color: rgba(18, 20, 29, 0.05);
     padding: 8px 13px;
+}
+
+.filter-button:active, .filter-active {
+    background: #F64;
+    color: #FFF;
+    font-family: Rubik, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+}
+
+.job-button:active {
+    background: #226BF9;
+    color: white;
 }
 
 .filter:not(:last-child) {
@@ -468,6 +484,7 @@ a {
     height: 48px;
     display: block;
     background: url("../img/icons/quote.svg");
+    margin-bottom: 32px;
 }
 
 .review-author {
@@ -517,11 +534,6 @@ a {
     gap: 24px;
 }
 
-.managing-button {
-    padding-left: 0;
-    margin-top: auto;
-}
-
 .managing-icon {
     margin-bottom: 26px;
 }
@@ -555,19 +567,21 @@ a {
 }
 
 .managing-button {
+    padding: 10px 24px 10px 6px;
+    margin-top: auto;
     display: inline-block;
-    background: none;
     color: #444D56;
     font-size: 16px;
     font-weight: 400;
     line-height: 120%; /* 19.2px */
+    background: url("../img/icons/arrow-black.svg") no-repeat calc(100% - 6px) 50%;
 }
 
-.managing-button::after {
-    content: url("../img/icons/arrow-black.svg");
-    transform: rotate(-90deg);
-    padding-left: 2px;
-    vertical-align: sub;
+.managing-button:hover {
+    border-radius: 4px;
+    color: #226BF9;
+    background: rgba(34, 107, 249, 0.10)
+                url("../img/icons/arrow-blue.svg") no-repeat calc(100% - 6px) 50%;
 }
 
 .boosting-heading {
