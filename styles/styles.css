@@ -1,10 +1,19 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version
+*/
+
 :root {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 *,
 ::before,
 ::after {
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
@@ -13,8 +22,14 @@ body {
     max-width: 1440px;
     margin: auto;
     min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-shadow: 1px 4px 8px 2px rgba(34, 60, 80, 0.2);
     box-shadow: 1px 4px 8px 2px rgba(34, 60, 80, 0.2);
 }
 
@@ -59,16 +74,16 @@ a {
 
 .promo {
     background: url("../img/shapes/shapes.svg") no-repeat 80% 20%,
-                url("../img/shapes/pink-shape.svg") no-repeat 0 calc(25% - 103px),
-                url("../img/background/violet.png") no-repeat calc(24% - 28px) 56%,
-                url("../img/background/violet.png") no-repeat 78% 56%,
-                url("../img/background/blue.png") no-repeat 94% 55%,
-                url("../img/background/blue.png") no-repeat  6% 55%,
-                url("../img/background/pink.png") no-repeat 18% 83%,
-                url("../img/background/pink.png") no-repeat 81% 83%,
-                url("../img/background/yellow.png") no-repeat 14% 20%,
-                url("../img/background/yellow.png") no-repeat 89% 20%,
-                url("../img/background/background.jpg");
+    url("../img/shapes/pink-shape.svg") no-repeat 0 calc(25% - 103px),
+    url("../img/background/violet.png") no-repeat calc(24% - 28px) 56%,
+    url("../img/background/violet.png") no-repeat 78% 56%,
+    url("../img/background/blue.png") no-repeat 94% 55%,
+    url("../img/background/blue.png") no-repeat  6% 55%,
+    url("../img/background/pink.png") no-repeat 18% 83%,
+    url("../img/background/pink.png") no-repeat 81% 83%,
+    url("../img/background/yellow.png") no-repeat 14% 20%,
+    url("../img/background/yellow.png") no-repeat 89% 20%,
+    url("../img/background/background.jpg");
 }
 
 .header {
@@ -76,9 +91,15 @@ a {
 }
 
 .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 24px 150px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: inherit;
     font-size: 16px;
@@ -91,6 +112,8 @@ a {
 }
 
 .navigation-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: white;
 }
@@ -171,7 +194,7 @@ a {
     border-radius: 8px;
     padding: 21px 280px 21px 72px;
     background: url("../img/icons/search.svg") no-repeat calc(5% - 20px) 50%,
-                url("../img/background/white.png");
+    url("../img/background/white.png");
 }
 
 .total-jobs {
@@ -194,8 +217,14 @@ a {
     color: #12141D;
     font-weight: 400;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -216,6 +245,7 @@ a {
     margin-bottom: 100px;
     padding-bottom: 32px;
     padding-top: 32px;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     border-bottom: 1px solid rgba(18, 20, 29, 0.20);;
@@ -247,6 +277,8 @@ a {
 }
 
 .filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 52px;
 }
@@ -256,7 +288,11 @@ a {
 }
 
 .filters-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
 }
 
@@ -294,7 +330,11 @@ a {
 }
 
 .jobs-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border: 1px solid rgba(18, 20, 29, 0.24);
     padding: 20px;
@@ -320,12 +360,20 @@ a {
 }
 
 .tags-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .tag {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -365,6 +413,8 @@ a {
 }
 
 .tags-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: #12141D;
     font-size: 16px;
@@ -383,7 +433,11 @@ a {
 }
 
 .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -439,7 +493,9 @@ a {
 }
 
 .companies-list {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
 }
@@ -478,7 +534,7 @@ a {
 .stars, .companys-reviews {
     color: rgba(18, 20, 29, 0.80);
     text-align: center;
-    font-family: "DM Sans", sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px; /* 114.286% */
@@ -490,7 +546,11 @@ a {
 
 .review-container {
     width: 1134px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -537,7 +597,10 @@ a {
 }
 
 .slider-actions {
+    -ms-flex-item-align: end;
     align-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -562,6 +625,8 @@ a {
 .managing-list {
     /*display: grid;*/
     /*grid-template-columns: repeat(3, 1fr);*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 24px;
 }
@@ -575,9 +640,18 @@ a {
     border-radius: 8px;
     border: 1px solid #E1E4E8;
     padding: 42px 39px 42px 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
 }
 
@@ -618,7 +692,7 @@ a {
     color: #226BF9;
     padding: 6px 24px 6px 10px;
     background: rgba(34, 107, 249, 0.10)
-                url("../img/icons/arrow-blue.svg") no-repeat calc(100% - 6px) 50%;
+    url("../img/icons/arrow-blue.svg") no-repeat calc(100% - 6px) 50%;
 }
 
 .boosting-heading {
@@ -626,6 +700,7 @@ a {
 }
 
 .links {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-top: 52px;
@@ -667,7 +742,11 @@ a {
 }
 
 .boosting {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
     padding-top: 100px;
     padding-bottom: 52px;
@@ -728,6 +807,8 @@ a {
 }
 
 .geo-info, .other-links, .other-links-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -752,6 +833,8 @@ a {
 }
 
 .footer {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
 }
 
