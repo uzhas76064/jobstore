@@ -59,16 +59,16 @@ a {
 
 .promo {
     background: url("../img/shapes/shapes.svg") no-repeat 80% 20%,
-                url("../img/shapes/pink-shape.svg") no-repeat 0 calc(25% - 103px),
-                url("../img/background/violet.png") no-repeat calc(24% - 28px) 56%,
-                url("../img/background/violet.png") no-repeat 78% 56%,
-                url("../img/background/blue.png") no-repeat 94% 55%,
-                url("../img/background/blue.png") no-repeat  6% 55%,
-                url("../img/background/pink.png") no-repeat 18% 83%,
-                url("../img/background/pink.png") no-repeat 81% 83%,
-                url("../img/background/yellow.png") no-repeat 14% 20%,
-                url("../img/background/yellow.png") no-repeat 89% 20%,
-                url("../img/background/background.jpg");
+    url("../img/shapes/pink-shape.svg") no-repeat 0 calc(25% - 103px),
+    url("../img/background/violet.png") no-repeat calc(24% - 28px) 56%,
+    url("../img/background/violet.png") no-repeat 78% 56%,
+    url("../img/background/blue.png") no-repeat 94% 55%,
+    url("../img/background/blue.png") no-repeat  6% 55%,
+    url("../img/background/pink.png") no-repeat 18% 83%,
+    url("../img/background/pink.png") no-repeat 81% 83%,
+    url("../img/background/yellow.png") no-repeat 14% 20%,
+    url("../img/background/yellow.png") no-repeat 89% 20%,
+    url("../img/background/background.jpg");
 }
 
 .header {
@@ -171,7 +171,7 @@ a {
     border-radius: 8px;
     padding: 21px 280px 21px 72px;
     background: url("../img/icons/search.svg") no-repeat calc(5% - 20px) 50%,
-                url("../img/background/white.png");
+    url("../img/background/white.png");
 }
 
 .total-jobs {
@@ -478,7 +478,7 @@ a {
 .stars, .companys-reviews {
     color: rgba(18, 20, 29, 0.80);
     text-align: center;
-    font-family: "DM Sans", sans-serif;
+    font-family: DM Sans, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px; /* 114.286% */
@@ -618,7 +618,7 @@ a {
     color: #226BF9;
     padding: 6px 24px 6px 10px;
     background: rgba(34, 107, 249, 0.10)
-                url("../img/icons/arrow-blue.svg") no-repeat calc(100% - 6px) 50%;
+    url("../img/icons/arrow-blue.svg") no-repeat calc(100% - 6px) 50%;
 }
 
 .boosting-heading {
