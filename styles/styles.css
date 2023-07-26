@@ -50,6 +50,7 @@ img {
 button {
     padding: 0;
     color: white;
+    border: none;
 }
 
 a {
